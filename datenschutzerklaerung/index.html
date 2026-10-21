@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung | RESTLOS</title>
+<meta name="theme-color" content="#cedc01">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23cedc01'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='20' fill='%23111'%3ER%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --lime:#cedc01;
+    --lime-deep:#b4c000;
+    --ink:#161616;
+    --ink-soft:#4a4a4a;
+    --rule:#dcdcdc;
+    --paper:#ffffff;
+    --paper-tint:#f6f6f2;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,"Segoe UI",sans-serif;
+    font-size:17px;line-height:1.55;
+  }
+  a{color:inherit}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+  .topbar{height:8px;background:var(--lime)}
+  header{
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    max-width:64rem;margin:0 auto;padding:1.25rem 1.5rem;
+    border-bottom:1px solid var(--rule);
+  }
+  .brand{font-weight:800;font-size:1.35rem;letter-spacing:.06em;text-decoration:none}
+  .brand span{color:var(--lime-deep)}
+  header nav a{text-decoration:none;font-weight:600;font-size:.95rem;border-bottom:2px solid var(--lime)}
+  header nav a:hover{border-bottom-color:var(--ink)}
+
+  main{max-width:64rem;margin:0 auto;padding:3rem 1.5rem 4rem}
+  .status{
+    display:inline-flex;align-items:center;gap:.6rem;
+    font-size:.9rem;font-weight:600;color:var(--ink-soft);
+    margin-bottom:1.75rem;
+  }
+  .status .dot{width:.7rem;height:.7rem;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(206,220,1,.3)}
+  h1{
+    font-size:clamp(2rem,5.5vw,3.6rem);line-height:1.05;letter-spacing:-.02em;
+    font-weight:800;margin:0 0 1.25rem;max-width:18ch;
+  }
+  .lede{font-size:clamp(1.1rem,2.2vw,1.35rem);max-width:38rem;margin:0 0 2.25rem;color:var(--ink-soft)}
+
+  .cta{
+    display:inline-block;background:var(--lime);color:var(--ink);text-decoration:none;
+    font-weight:800;font-size:1.15rem;padding:1.05rem 1.6rem;
+    border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);
+    transition:transform .08s ease,box-shadow .08s ease;
+  }
+  .cta:hover{transform:translate(2px,2px);box-shadow:4px 4px 0 var(--ink)}
+  .cta:active{transform:translate(6px,6px);box-shadow:0 0 0 var(--ink)}
+  .quick{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin:1.5rem 0 0;padding:0;list-style:none;font-size:.95rem}
+  .quick a{text-decoration:underline;text-underline-offset:3px}
+
+  .grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;
+    margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid var(--rule);
+  }
+  @media (max-width:720px){.grid{grid-template-columns:1fr;gap:2rem}}
+  h2{font-size:1.15rem;margin:0 0 .75rem;font-weight:800}
+  .grid p{margin:0 0 .9rem;color:var(--ink-soft)}
+  .grid p:last-child{margin-bottom:0}
+  .facts{margin:0;padding:0;list-style:none}
+  .facts li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:.75rem;align-items:flex-start}
+  .facts li:last-child{border-bottom:0}
+  .facts .ok{flex:none;width:1.35rem;height:1.35rem;margin-top:.15rem;background:var(--lime);border:2px solid var(--ink);
+    display:inline-grid;place-items:center;font-size:.8rem;font-weight:800}
+  .facts .no{flex:none;width:1.35rem;height:1.35rem;margin-top:.15rem;background:var(--paper);border:2px solid var(--ink);
+    display:inline-grid;place-items:center;font-size:.8rem;font-weight:800}
+
+  .contact{
+    margin-top:3rem;padding:1.5rem;background:var(--paper-tint);border-left:6px solid var(--lime);
+  }
+  .contact h2{margin-bottom:.5rem}
+  .contact p{margin:.2rem 0}
+  .contact a{text-decoration:none;font-weight:700;border-bottom:2px solid var(--lime)}
+
+  footer{
+    max-width:64rem;margin:0 auto;padding:1.5rem;border-top:1px solid var(--rule);
+    font-size:.85rem;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between;
+  }
+  footer a{text-decoration:underline;text-underline-offset:3px}
+  .legal{margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid var(--rule);max-width:44rem;font-size:.95rem;color:var(--ink-soft)}
+  .legal h2{color:var(--ink);margin-top:2rem}
+  .legal h2:first-child{margin-top:0}
+  .legal h3{font-size:1rem;color:var(--ink);margin:1.25rem 0 .4rem}
+  .legal p{margin:0 0 .8rem}
+  @media (prefers-reduced-motion:reduce){.cta{transition:none}}
+  .doc{max-width:44rem;margin:0 auto;padding:2.5rem 1.5rem 4rem;font-size:.97rem;color:var(--ink-soft)}
+  .doc h1{font-size:clamp(1.7rem,4vw,2.4rem);max-width:none;color:var(--ink)}
+  .doc h2{color:var(--ink);font-size:1.25rem;margin:2.25rem 0 .6rem}
+  .doc h3{color:var(--ink);font-size:1.05rem;margin:1.5rem 0 .4rem}
+  .doc h4{color:var(--ink);font-size:1rem;margin:1.25rem 0 .25rem}
+  .doc p{margin:0 0 .75rem}
+  .doc ul{margin:0 0 .9rem 1.2rem;padding:0}
+  .doc li{margin:.2rem 0}
+  .doc .note{background:var(--paper-tint);border-left:6px solid var(--lime);padding:1rem 1.25rem;margin:0 0 2rem;color:var(--ink)}
+  .doc .meta{font-size:.9rem;margin-bottom:1.5rem}
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<header>
+  <a class="brand" href="/">RESTLOS<span>.COM</span></a>
+  <nav><a href="https://auktionen.restlos.com/auktionen">Zu den Auktionen</a></nav>
+</header>
+<main class="doc">
+<h1>Datenschutzerklärung</h1>
+<p class="meta">Stand: 28. Juni 2025 (Fassung der Unternehmensseite). Hinweis zum Übergangsbetrieb seit 21. Oktober 2026 siehe unten.</p>
+<div class="note"><strong>Hinweis zum Übergangsbetrieb:</strong> Die Unternehmensseite restlos.com ist seit dem 21. Oktober 2026 vorübergehend nicht erreichbar. Diese Datenschutzerklärung wird in der Zwischenzeit zusammen mit einer Informationsseite über GitHub Pages ausgeliefert (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA, ein Unternehmen der Microsoft Corporation). Die Übergangsseite setzt keine Cookies, bindet keine Analyse-, Marketing- oder sonstigen Drittdienste ein und lädt keine externen Inhalte nach; die in den Abschnitten 5 und 6 genannten Dienste kommen dort nicht zum Einsatz. GitHub verarbeitet beim Abruf technisch notwendige Verbindungsdaten in Server-Logfiles (insbesondere IP-Adresse, Zeitpunkt, aufgerufene Seite, Browser). Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren und erreichbaren Online-Präsenz (Art. 6 Abs. 1 S. 1 lit. f DSGVO); die Übermittlung in die USA ist durch die EU-Standardvertragsklauseln im Rahmen des GitHub Data Protection Agreement abgesichert. Für die Auktionsplattform auktionen.restlos.com gelten die nachstehenden Angaben unverändert.</div>
+<h2>1. Einleitung und Verantwortlicher</h2>
+<p>Wir freuen uns über Ihr Interesse an unseren Online-Präsenzen. Der Schutz Ihrer personenbezogenen Daten ist uns ein wichtiges Anliegen. Im Folgenden informieren wir Sie detailliert über den Umgang mit Ihren Daten bei der Nutzung:</p>
+<ul>
+<li>unserer Website restlos.com</li>
+<li>unserer Auktionsplattform auktionen.restlos.com</li>
+<li>unserer Profile in sozialen Medien</li>
+</ul>
+<p>Personenbezogene Daten sind alle Daten, die auf Sie persönlich beziehbar sind, z. B. Ihr Name, Ihre Adresse, E-Mail-Adressen oder Ihr Nutzerverhalten.</p>
+<h3>1.1. Verantwortlicher</h3>
+<p>Verantwortlicher gemäß Art. 4 Abs. 7 EU-Datenschutz-Grundverordnung (DSGVO) ist:</p>
+<p>Restlos Industrieverwertungen &amp; Service GmbH, Puscherstraße 7, 90411 Nürnberg, Deutschland.</p>
+<p>E-Mail: <a href="mailto:info@restlos.com">info@restlos.com</a></p>
+<p>Gesetzlich vertreten durch: Fabian Altrichter</p>
+<h3>1.2. Datenschutzbeauftragter</h3>
+<p>Unseren externen Datenschutzbeauftragten erreichen Sie über:</p>
+<p>heyData GmbH, Schützenstraße 5, 10117 Berlin.</p>
+<p>E-Mail: <a href="mailto:datenschutz@heydata.eu">datenschutz@heydata.eu</a></p>
+<p>Web: <a href="https://www.heydata.eu">https://www.heydata.eu</a></p>
+<h2>2. Allgemeine Grundsätze der Datenverarbeitung</h2>
+<h3>2.1. Rechtsgrundlagen der Verarbeitung</h3>
+<p>Die Verarbeitung Ihrer personenbezogenen Daten erfolgt auf Basis der folgenden Rechtsgrundlagen:</p>
+<ul>
+<li>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a DSGVO): Sofern Sie uns eine Einwilligung für einen bestimmten Zweck erteilt haben.</li>
+<li>Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b DSGVO): Wenn die Verarbeitung für die Erfüllung eines Vertrags mit Ihnen oder zur Durchführung von Maßnahmen auf Ihre Anfrage hin erforderlich ist.</li>
+<li>Rechtliche Verpflichtung (Art. 6 Abs. 1 S. 1 lit. c DSGVO): Wenn wir zur Verarbeitung verpflichtet sind, um eine rechtliche Verpflichtung zu erfüllen (z. B. steuerliche Aufbewahrungspflichten).</li>
+<li>Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f DSGVO): Wenn die Verarbeitung zur Wahrung unserer berechtigten Interessen oder der eines Dritten erforderlich ist und Ihre Interessen oder Grundrechte nicht überwiegen (z. B. für den technisch sicheren Betrieb unserer Website).</li>
+</ul>
+<h3>2.2. Datenverarbeitung außerhalb des Europäischen Wirtschaftsraums (EWR)</h3>
+<p>Wenn wir Daten an Dienstleister außerhalb des EWR übermitteln, stellen wir ein angemessenes Datenschutzniveau sicher. Dies geschieht durch:</p>
+<ul>
+<li>Angemessenheitsbeschlüsse der EU-Kommission (Art. 45 DSGVO), wie sie z.B. für Großbritannien, Kanada oder für unter dem EU-US Data Privacy Framework zertifizierte US-Dienstleister gelten.</li>
+<li>Standardvertragsklauseln der EU-Kommission (Art. 46 Abs. 2 lit. c DSGVO), die wir mit den Dienstleistern vereinbaren. Diese werden oft durch zusätzliche vertragliche Garantien zum Schutz Ihrer Daten ergänzt.</li>
+</ul>
+<h3>2.3. Speicherdauer</h3>
+<p>Ihre Daten werden gelöscht, sobald sie für den Erhebungszweck nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten (z. B. aus dem Handels- oder Steuerrecht) entgegenstehen. Ist eine Löschung nicht möglich, wird die Verarbeitung der Daten eingeschränkt.</p>
+<h3>2.4. Ihre Rechte als betroffene Person</h3>
+<p>Sie haben jederzeit folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p>
+<ul>
+<li>Recht auf Auskunft</li>
+<li>Recht auf Berichtigung oder Löschung</li>
+<li>Recht auf Einschränkung der Verarbeitung</li>
+<li>Recht auf Widerspruch gegen die Verarbeitung</li>
+<li>Recht auf Datenübertragbarkeit</li>
+<li>Recht, eine erteilte Einwilligung jederzeit zu widerrufen</li>
+</ul>
+<p>Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer Daten zu beschweren. Eine Übersicht der Aufsichtsbehörden stellt der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit bereit.</p>
+<h3>2.5. Pflicht zur Bereitstellung von Daten</h3>
+<p>Im Rahmen einer Geschäftsbeziehung müssen Sie nur die Daten bereitstellen, die für deren Begründung und Durchführung zwingend erforderlich sind oder zu deren Erhebung wir gesetzlich verpflichtet sind. Pflichtangaben werden als solche gekennzeichnet.</p>
+<h3>2.6. Keine automatisierte Entscheidungsfindung</h3>
+<p>Wir nutzen grundsätzlich keine vollautomatisierte Entscheidungsfindung gemäß Artikel 22 DSGVO.</p>
+<h2>3. Datenerfassung auf unseren Webseiten und unserer Plattform</h2>
+<h3>3.1. Hinweis zum TDDDG (ehemals TTDSG)</h3>
+<p>Für Besucher aus Deutschland gilt: Das Speichern von Informationen auf Ihrem Endgerät (z.B. durch Cookies) oder der Zugriff auf diese Informationen unterliegt dem Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG).</p>
+<p>Ein solcher Zugriff erfolgt ohne Ihre Einwilligung nur, wenn er unbedingt erforderlich ist, um einen von Ihnen ausdrücklich gewünschten Dienst zur Verfügung zu stellen (§ 25 Abs. 2 Nr. 2 TDDDG). Dies betrifft z.B. technisch notwendige Cookies.</p>
+<p>Für alle anderen Zwecke (z.B. Marketing, Analyse) erfolgt die Speicherung oder der Zugriff nur auf Grundlage Ihrer Einwilligung (§ 25 Abs. 1 TDDDG).</p>
+<p>Die anschließende Verarbeitung der Daten richtet sich nach den Bestimmungen der DSGVO.</p>
+<h3>3.2. Informatorische Nutzung und Server-Logfiles (Hosting)</h3>
+<p>Bei jedem Besuch unserer Website (restlos.com) und unserer Plattform (auktionen.restlos.com) erfasst das System automatisiert Daten, die Ihr Browser an unseren Server übermittelt (sog. Server-Logfiles). Dies ist technisch erforderlich, um Ihnen die Inhalte anzuzeigen und die Stabilität und Sicherheit zu gewährleisten.</p>
+<p>Erfasste Daten:</p>
+<ul>
+<li>IP-Adresse</li>
+<li>Datum und Uhrzeit der Anfrage</li>
+<li>Zeitzonendifferenz zur GMT</li>
+<li>Aufgerufene Seite und Inhalt der Anforderung</li>
+<li>Übertragene Datenmenge und Zugriffsstatus (HTTP-Statuscode)</li>
+<li>Website, von der die Anforderung kommt (Referrer-URL)</li>
+<li>Browser, Betriebssystem, Sprache und Version der Browsersoftware</li>
+</ul>
+<p>Diese Daten werden spätestens nach 14 Tagen gelöscht. Rechtsgrundlage ist unser berechtigtes Interesse (Art. 6 Abs. 1 S. 1 lit. f DSGVO).</p>
+<p>Unsere Hosting-Dienstleister:</p>
+<ul>
+<li>Website (restlos.com): Gehostet bei Mittwald CM Service GmbH &amp; Co. KG, Königsberger Straße 4-6, 32339 Espelkamp, Deutschland. Wir nutzen zudem das Content Delivery Network (CDN) Varnish, das ebenfalls von Mittwald bereitgestellt wird.</li>
+<li>Plattform (auktionen.restlos.com): Gehostet bei Amazon Web Services (AWS), Amazon Web Services EMEA Sàrl, Avenue John F. Kennedy 38, 1855 Luxemburg. Wir nutzen zudem das CDN Cloudfront (Amazon AWS).</li>
+</ul>
+<h2>4. Spezifische Funktionen und Verarbeitungen</h2>
+<h3>4.1. Kontaktaufnahme (E-Mail, Telefon, Kontaktformular)</h3>
+<p>Wenn Sie mit uns Kontakt aufnehmen, speichern wir die von Ihnen übermittelten Daten (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht), um Ihre Anfrage zu bearbeiten. Rechtsgrundlage ist unser berechtigtes Interesse an der Beantwortung Ihres Anliegens (Art. 6 Abs. 1 S. 1 lit. f DSGVO). Die Daten werden nach Abschluss der Bearbeitung gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+<h3>4.2. Newsletter</h3>
+<p>a) Für Bestandskunden (Direktwerbung): Wenn Sie bei uns Waren oder Dienstleistungen erworben haben, können wir Ihnen per E-Mail Informationen zu ähnlichen Angeboten zusenden. Rechtsgrundlage ist unser berechtigtes Interesse an der Direktwerbung (Art. 6 Abs. 1 S. 1 lit. f DSGVO). Sie können dieser Nutzung jederzeit widersprechen, z. B. über den Abmeldelink in jeder E-Mail.</p>
+<p>b) Für Interessenten (mit Einwilligung): Sie können unseren kostenlosen Newsletter abonnieren. Die Anmeldung erfolgt auf Basis Ihrer Einwilligung (Art. 6 Abs. 1 S. 1 lit. a DSGVO). Diese können Sie jederzeit widerrufen. Wir messen auf Grundlage Ihrer Einwilligung auch die Öffnungs- und Klickraten, um unsere Inhalte zu verbessern.</p>
+<p>Für den Versand nutzen wir den Dienstleister Brevo (Sendinblue GmbH), dessen Details Sie unter Punkt 6 finden.</p>
+<h3>4.3. Kundenkonto auf der Auktionsplattform</h3>
+<p>Sie können auf auktionen.restlos.com ein Kundenkonto anlegen. Die dabei angegebenen Daten verarbeiten wir zur Erfüllung des Nutzungsvertrages (Art. 6 Abs. 1 S. 1 lit. b DSGVO). Das Konto und die dazugehörigen Daten werden gelöscht, wenn Sie es auflösen und keine Aufbewahrungspflichten bestehen.</p>
+<h3>4.4. Angebot von Dienstleistungen auf der Plattform</h3>
+<p>Für die Nutzung unserer Dienstleistungen auf der Plattform (z.B. Gebote bei Auktionen) verarbeiten wir die zur Vertragsdurchführung notwendigen Daten (Art. 6 Abs. 1 S. 1 lit. b DSGVO). Dazu gehören:</p>
+<ul>
+<li>Name, Anschrift, Geburtsdatum, E-Mail, Telefonnummer</li>
+<li>Firma, Gewerbenachweis, Ust-ID, Steuernummer</li>
+<li>Kopien von Ausweisdokumenten</li>
+<li>Technische Daten (IP-Adresse, Browser etc.)</li>
+</ul>
+<p>Zur Abwicklung geben wir Daten an folgende Dienstleister weiter:</p>
+<ul>
+<li>Versand: DHL Paket GmbH, Sträßchensweg 10, 53113 Bonn</li>
+<li>Rechnungsstellung: Haufe-Lexware GmbH &amp; Co. KG, Munzinger Straße 9, 79111 Freiburg</li>
+</ul>
+<h3>4.5. Terminbuchung</h3>
+<p>Sie können online Termine mit uns vereinbaren. Wir verarbeiten die von Ihnen eingegebenen Daten auf Grundlage unseres berechtigten Interesses an einer einfachen und effizienten Terminplanung (Art. 6 Abs. 1 S. 1 lit. f DSGVO). Hierfür nutzen wir den Dienst Timify, siehe Punkt 6.</p>
+<h3>4.6. Gewinnspiele und Kundenumfragen</h3>
+<p>Gewinnspiele: Wir verarbeiten Ihre Daten zur Ermittlung und Benachrichtigung der Gewinner. Rechtsgrundlage ist unser berechtigtes Interesse an der Kundenbindung und -gewinnung (Art. 6 Abs. 1 S. 1 lit. f DSGVO).</p>
+<p>Kundenumfragen: Wir verarbeiten die Umfragedaten, um unsere Dienstleistungen zu verbessern. Rechtsgrundlage ist unser berechtigtes Interesse (Art. 6 Abs. 1 S. 1 lit. f DSGVO).</p>
+<p>Die Daten werden nach Zweckerfüllung gelöscht.</p>
+<h3>4.7. Bewerbungen und Stellenanzeigen</h3>
+<p>Wir verarbeiten Ihre Bewerbungsdaten zur Durchführung des Bewerbungsverfahrens (§ 26 Abs. 1 BDSG). Freiwillige Angaben basieren auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Wir bitten darum, auf sensible Daten (z.B. zu politischen Meinungen) zu verzichten.</p>
+<p>Daten von abgelehnten Bewerbern werden spätestens nach sechs Monaten gelöscht. Bei einer Einstellung werden die Daten Teil der Personalakte. Haben Sie eingewilligt, Ihre Daten für weitere Verfahren zu speichern, löschen wir diese nach einem Jahr. Für unser Bewerbermanagement nutzen wir den Dienst Personio, siehe Punkt 6.</p>
+<h2>5. Cookies</h2>
+<p>Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden. Wir verwenden technisch notwendige Cookies, die für die Grundfunktionen der Website unerlässlich sind (z.B. für Login-Sessions oder Spracheinstellungen). Rechtsgrundlage hierfür ist unser berechtigtes Interesse an einem funktionierenden Online-Angebot (Art. 6 Abs. 1 S. 1 lit. f DSGVO) sowie § 25 Abs. 2 Nr. 2 TDDDG.</p>
+<p>Alle weiteren Cookies (für Analyse, Marketing etc.) werden nur nach Ihrer ausdrücklichen Einwilligung gesetzt (Art. 6 Abs. 1 S. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG). Ihre Einwilligung verwalten wir über ein Consent-Management-Tool.</p>
+<h3>5.1. Borlabs Cookie (Consent-Management)</h3>
+<p>Anbieter: Borlabs GmbH, Hamburger Str. 11, 22083 Hamburg, Deutschland.</p>
+<p>Zweck: Speicherung Ihrer Cookie-Einwilligungen. Ein technisch notwendiges Cookie (borlabs-cookie) wird gesetzt.</p>
+<p>Rechtsgrundlage: Unser berechtigtes Interesse am Nachweis der Einwilligungen (Art. 6 Abs. 1 S. 1 lit. f DSGVO).</p>
+<p>Datenschutzerklärung: <a href="https://de.borlabs.io/datenschutz/">https://de.borlabs.io/datenschutz/</a></p>
+<h3>5.2. Cookiebot (Consent-Management)</h3>
+<p>Anbieter: Usercentrics GmbH, Sendlinger Straße 7, 80331 München, Deutschland.</p>
+<p>Zweck: Verwaltung und Dokumentation Ihrer Einwilligungen.</p>
+<p>Rechtsgrundlage: Erfüllung einer rechtlichen Verpflichtung (Art. 6 Abs. 1 S. 1 lit. c DSGVO).</p>
+<p>Datenschutzerklärung: <a href="https://www.cookiebot.com/de/privacy-policy/">https://www.cookiebot.com/de/privacy-policy/</a></p>
+<h2>6. Drittanbieter und eingesetzte Dienste</h2>
+<p>Wir setzen verschiedene Dienste von Drittanbietern ein. Der Einsatz von Analyse-, Marketing- und funktionalen Diensten erfolgt nur auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 S. 1 lit. a DSGVO), die Sie jederzeit widerrufen können.</p>
+<h3>Kommunikation &amp; Marketing</h3>
+<h4>Brevo (ehem. Sendinblue)</h4>
+<p>Anbieter: Sendinblue GmbH, Köpenicker Str. 126, 10179 Berlin.</p>
+<p>Zweck: Versand von Newslettern und transaktionalen E-Mails; Analyse von Öffnungs- und Klickraten.</p>
+<p>Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO) für System-Mails; Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) für Newsletter-Analysen.</p>
+<p>Datenschutzerklärung: <a href="https://www.brevo.com/de/legal/privacypolicy/">https://www.brevo.com/de/legal/privacypolicy/</a></p>
+<h3>Analyse &amp; Tracking</h3>
+<h4>Google Analytics</h4>
+<p>Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+<p>Zweck: Analyse des Nutzerverhaltens zur Verbesserung unserer Website.</p>
+<p>Drittlandtransfer: USA (gesichert durch Angemessenheitsbeschluss/EU-US Data Privacy Framework).</p>
+<p>Datenschutzerklärung: <a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a></p>
+<h4>Meta Pixel &amp; Facebook Conversion API</h4>
+<p>Anbieter: Meta Platforms Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland.</p>
+<p>Zweck: Analyse von Nutzerverhalten und Messung des Erfolgs von Werbekampagnen (Conversion-Tracking).</p>
+<p>Drittlandtransfer: USA (gesichert durch Angemessenheitsbeschluss/EU-US Data Privacy Framework).</p>
+<p>Datenschutzerklärung: <a href="https://www.facebook.com/policy.php">https://www.facebook.com/policy.php</a></p>
+<h4>LinkedIn Insight Tag</h4>
+<p>Anbieter: LinkedIn Ireland Unlimited Company, Wilton Place, Dublin 2, Irland.</p>
+<p>Zweck: Conversion-Tracking und Analyse der Wirksamkeit von LinkedIn-Werbung.</p>
+<p>Datenschutzerklärung: <a href="https://www.linkedin.com/legal/privacy-policy">https://www.linkedin.com/legal/privacy-policy</a></p>
+<h4>Leadinfo</h4>
+<p>Anbieter: Leadinfo B.V., Rivium Quadrant 141, 2909 LC Capelle aan den IJssel, Niederlande.</p>
+<p>Zweck: Identifizierung von geschäftlichen Website-Besuchern zur Lead-Generierung.</p>
+<p>Datenschutzerklärung: <a href="https://www.leadinfo.com/de/datenschutz/">https://www.leadinfo.com/de/datenschutz/</a></p>
+<h3>Werbung (Ads)</h3>
+<h4>Google Ads &amp; Google Conversion Tag</h4>
+<p>Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+<p>Zweck: Schaltung von Werbung und Messung des Werbeerfolgs (Conversion-Tracking).</p>
+<p>Drittlandtransfer: USA (gesichert durch Angemessenheitsbeschluss/EU-US Data Privacy Framework).</p>
+<p>Datenschutzerklärung: <a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a></p>
+<h4>LinkedIn Ads</h4>
+<p>Anbieter: LinkedIn Ireland Unlimited Company, Wilton Place, Dublin 2, Irland.</p>
+<p>Zweck: Ausspielen zielgerichteter Werbung auf der LinkedIn-Plattform.</p>
+<p>Datenschutzerklärung: <a href="https://www.linkedin.com/legal/privacy-policy">https://www.linkedin.com/legal/privacy-policy</a></p>
+<h4>Facebook Custom Audiences</h4>
+<p>Anbieter: Meta Platforms Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland.</p>
+<p>Zweck: Erstellung von Zielgruppen für personalisierte Werbung auf Meta-Plattformen.</p>
+<p>Drittlandtransfer: USA (gesichert durch Angemessenheitsbeschluss/EU-US Data Privacy Framework).</p>
+<p>Datenschutzerklärung: <a href="https://www.facebook.com/policy.php">https://www.facebook.com/policy.php</a></p>
+<h3>Funktionale Dienste</h3>
+<h4>Google Tag Manager</h4>
+<p>Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+<p>Zweck: Verwaltung von Website-Tags (Codeschnipseln) über eine Oberfläche, ohne den Quellcode zu verändern. Der Manager selbst verarbeitet keine personenbezogenen Daten, löst aber andere Tags aus.</p>
+<p>Drittlandtransfer: USA (gesichert durch Angemessenheitsbeschluss/EU-US Data Privacy Framework).</p>
+<p>Datenschutzerklärung: <a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a></p>
+<h4>YouTube Videos</h4>
+<p>Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+<p>Zweck: Einbindung von Videos auf unserer Website.</p>
+<p>Drittlandtransfer: USA (gesichert durch Einwilligung).</p>
+<p>Datenschutzerklärung: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h4>Google reCAPTCHA</h4>
+<p>Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+<p>Zweck: Schutz von Formularen vor Spam und automatisierten Bots.</p>
+<p>Drittlandtransfer: USA (gesichert durch Angemessenheitsbeschluss/EU-US Data Privacy Framework).</p>
+<p>Datenschutzerklärung: <a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a></p>
+<h4>Matterport</h4>
+<p>Anbieter: Matterport, Inc., 352 E. Java Dr., Sunnyvale, CA 94089, USA.</p>
+<p>Zweck: Einbindung von 3D-Rundgängen und virtuellen Touren.</p>
+<p>Drittlandtransfer: USA (gesichert durch Angemessenheitsbeschluss/EU-US Data Privacy Framework).</p>
+<p>Datenschutzerklärung: <a href="https://matterport.com/de/legal/privacy-policy">https://matterport.com/de/legal/privacy-policy</a></p>
+<h4>Timify</h4>
+<p>Anbieter: TerminApp GmbH, Balanstraße 73, 81541 München, Deutschland.</p>
+<p>Zweck: Online-Terminplanung.</p>
+<p>Rechtsgrundlage: Unser berechtigtes Interesse an einer effizienten Terminverwaltung (Art. 6 Abs. 1 S. 1 lit. f DSGVO).</p>
+<p>Datenschutzerklärung: <a href="https://www.timify.com/de/legal/">https://www.timify.com/de/legal/</a></p>
+<h3>Sicherheit &amp; Entwicklung</h3>
+<h4>Wordfence</h4>
+<p>Anbieter: DEFIANT INC., 1700 Westlake Ave N Ste 200, Seattle, WA 98109, USA.</p>
+<p>Zweck: Schutz unserer Website vor Angriffen und Sicherheitslücken (Firewall).</p>
+<p>Rechtsgrundlage: Unser berechtigtes Interesse an der Sicherheit unserer IT-Systeme (Art. 6 Abs. 1 S. 1 lit. f DSGVO).</p>
+<p>Drittlandtransfer: USA (gesichert durch Standardvertragsklauseln).</p>
+<p>Datenschutzerklärung: <a href="https://www.wordfence.com/privacy-policy/">https://www.wordfence.com/privacy-policy/</a></p>
+<h4>Ably API</h4>
+<p>Anbieter: Ably Realtime Ltd., London, UK.</p>
+<p>Zweck: Bereitstellung von Echtzeit-Kommunikationsfunktionen in unseren Anwendungen.</p>
+<p>Rechtsgrundlage: Unser berechtigtes Interesse an einer modernen und funktionalen Anwendungsentwicklung (Art. 6 Abs. 1 S. 1 lit. f DSGVO).</p>
+<p>Datenschutzerklärung: <a href="https://ably.com/privacy">https://ably.com/privacy</a></p>
+<h4>heyData Datenschutz-Siegel</h4>
+<p>Anbieter: heyData GmbH, Schützenstraße 5, 10117 Berlin, Deutschland.</p>
+<p>Zweck: Anzeige unseres Compliance-Status. Es wird Ihre IP-Adresse verarbeitet, um die Authentizität des Siegels sicherzustellen.</p>
+<p>Rechtsgrundlage: Unser berechtigtes Interesse an der transparenten Darstellung unserer Datenschutzmaßnahmen (Art. 6 Abs. 1 S. 1 lit. f DSGVO).</p>
+<p>Datenschutzerklärung: <a href="https://heydata.eu/datenschutzerklaerung">https://heydata.eu/datenschutzerklaerung</a></p>
+<h3>Recruiting</h3>
+<h4>Personio</h4>
+<p>Anbieter: Personio GmbH, Rundfunkplatz 4, 80335 München, Deutschland.</p>
+<p>Zweck: Verwaltung von Bewerbungsprozessen.</p>
+<p>Rechtsgrundlage: Unser berechtigtes Interesse an einem effizienten Recruiting-Prozess (Art. 6 Abs. 1 S. 1 lit. f DSGVO).</p>
+<p>Datenschutzerklärung: <a href="https://www.personio.de/datenschutzerklaerung/">https://www.personio.de/datenschutzerklaerung/</a></p>
+<h2>7. Auftritte in sozialen Medien (Social Media)</h2>
+<p>Wir unterhalten Profile in sozialen Netzwerken. Die Betreiber dieser Netzwerke verarbeiten Daten ihrer Nutzer regelmäßig für eigene Werbezwecke und erstellen Nutzerprofile. Wir haben darauf nur begrenzten Einfluss. Treten Sie über diese Plattformen mit uns in Kontakt, verarbeiten wir Ihre Daten zur Beantwortung Ihrer Anfrage auf Grundlage unseres berechtigten Interesses (Art. 6 Abs. 1 S. 1 lit. f DSGVO).</p>
+<p>Facebook &amp; Instagram: Meta Platforms Ireland Ltd., 4 Grand Canal Square, Dublin 2, Irland. Datenschutzerklärung: <a href="https://www.facebook.com/policy.php">https://www.facebook.com/policy.php</a> und <a href="https://help.instagram.com/519522125107875">https://help.instagram.com/519522125107875</a> – Für unsere Facebook-Seite sind wir gemeinsam mit Meta verantwortlich (Art. 26 DSGVO).</p>
+<p>LinkedIn: LinkedIn Ireland Unlimited Company, Wilton Place, Dublin 2, Irland. Datenschutzerklärung: <a href="https://www.linkedin.com/legal/privacy-policy">https://www.linkedin.com/legal/privacy-policy</a></p>
+<p>X (ehemals Twitter): X Corp., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA. Datenschutzerklärung: <a href="https://twitter.com/de/privacy">https://twitter.com/de/privacy</a></p>
+<p>Xing: New Work SE, Dammtorstraße 29-32, 20354 Hamburg, Deutschland. Datenschutzerklärung: <a href="https://privacy.xing.com/de/datenschutzerklaerung">https://privacy.xing.com/de/datenschutzerklaerung</a></p>
+<p>YouTube: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Datenschutzerklärung: <a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a></p>
+<h2>8. Änderung dieser Datenschutzerklärung</h2>
+<p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+<h2>9. Fragen und Kommentare</h2>
+<p>Für Fragen oder Kommentare bezüglich dieser Datenschutzerklärung stehen wir Ihnen gern unter den oben in Abschnitt 1.1 angegebenen Kontaktdaten zur Verfügung.</p>
+</main>
+<footer>
+  <span>RESTLOS Industrieverwertungen und Service GmbH, Nürnberg</span>
+  <span><a href="/">Startseite</a> · <a href="/impressum/">Impressum</a> · <a href="/datenschutzerklaerung/">Datenschutz</a> · <a href="https://auktionen.restlos.com/cookies">Cookies</a></span>
+</footer>
+</body>
+</html>

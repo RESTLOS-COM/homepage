@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RESTLOS – Auktionen laufen weiter | restlos.com vorübergehend nicht erreichbar</title>
+<meta name="description" content="restlos.com ist vorübergehend nicht erreichbar. Unsere Onlineauktionen auf auktionen.restlos.com laufen uneingeschränkt weiter.">
+<meta name="theme-color" content="#cedc01">
+<meta property="og:title" content="RESTLOS – Auktionen laufen weiter">
+<meta property="og:description" content="restlos.com ist vorübergehend nicht erreichbar. Unsere Onlineauktionen laufen uneingeschränkt weiter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://restlos.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23cedc01'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='20' fill='%23111'%3ER%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --lime:#cedc01;
+    --lime-deep:#b4c000;
+    --ink:#161616;
+    --ink-soft:#4a4a4a;
+    --rule:#dcdcdc;
+    --paper:#ffffff;
+    --paper-tint:#f6f6f2;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,"Segoe UI",sans-serif;
+    font-size:17px;line-height:1.55;
+  }
+  a{color:inherit}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+  .topbar{height:8px;background:var(--lime)}
+  header{
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    max-width:64rem;margin:0 auto;padding:1.25rem 1.5rem;
+    border-bottom:1px solid var(--rule);
+  }
+  .brand{font-weight:800;font-size:1.35rem;letter-spacing:.06em;text-decoration:none}
+  .brand span{color:var(--lime-deep)}
+  header nav a{text-decoration:none;font-weight:600;font-size:.95rem;border-bottom:2px solid var(--lime)}
+  header nav a:hover{border-bottom-color:var(--ink)}
+
+  main{max-width:64rem;margin:0 auto;padding:3rem 1.5rem 4rem}
+  .status{
+    display:inline-flex;align-items:center;gap:.6rem;
+    font-size:.9rem;font-weight:600;color:var(--ink-soft);
+    margin-bottom:1.75rem;
+  }
+  .status .dot{width:.7rem;height:.7rem;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(206,220,1,.3)}
+  h1{
+    font-size:clamp(2rem,5.5vw,3.6rem);line-height:1.05;letter-spacing:-.02em;
+    font-weight:800;margin:0 0 1.25rem;max-width:18ch;
+  }
+  .lede{font-size:clamp(1.1rem,2.2vw,1.35rem);max-width:38rem;margin:0 0 2.25rem;color:var(--ink-soft)}
+
+  .cta{
+    display:inline-block;background:var(--lime);color:var(--ink);text-decoration:none;
+    font-weight:800;font-size:1.15rem;padding:1.05rem 1.6rem;
+    border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);
+    transition:transform .08s ease,box-shadow .08s ease;
+  }
+  .cta:hover{transform:translate(2px,2px);box-shadow:4px 4px 0 var(--ink)}
+  .cta:active{transform:translate(6px,6px);box-shadow:0 0 0 var(--ink)}
+  .quick{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin:1.5rem 0 0;padding:0;list-style:none;font-size:.95rem}
+  .quick a{text-decoration:underline;text-underline-offset:3px}
+
+  .grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;
+    margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid var(--rule);
+  }
+  @media (max-width:720px){.grid{grid-template-columns:1fr;gap:2rem}}
+  h2{font-size:1.15rem;margin:0 0 .75rem;font-weight:800}
+  .grid p{margin:0 0 .9rem;color:var(--ink-soft)}
+  .grid p:last-child{margin-bottom:0}
+  .facts{margin:0;padding:0;list-style:none}
+  .facts li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:.75rem;align-items:flex-start}
+  .facts li:last-child{border-bottom:0}
+  .facts .ok{flex:none;width:1.35rem;height:1.35rem;margin-top:.15rem;background:var(--lime);border:2px solid var(--ink);
+    display:inline-grid;place-items:center;font-size:.8rem;font-weight:800}
+  .facts .no{flex:none;width:1.35rem;height:1.35rem;margin-top:.15rem;background:var(--paper);border:2px solid var(--ink);
+    display:inline-grid;place-items:center;font-size:.8rem;font-weight:800}
+
+  .contact{
+    margin-top:3rem;padding:1.5rem;background:var(--paper-tint);border-left:6px solid var(--lime);
+  }
+  .contact h2{margin-bottom:.5rem}
+  .contact p{margin:.2rem 0}
+  .contact a{text-decoration:none;font-weight:700;border-bottom:2px solid var(--lime)}
+
+  footer{
+    max-width:64rem;margin:0 auto;padding:1.5rem;border-top:1px solid var(--rule);
+    font-size:.85rem;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between;
+  }
+  footer a{text-decoration:underline;text-underline-offset:3px}
+  .legal{margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid var(--rule);max-width:44rem;font-size:.95rem;color:var(--ink-soft)}
+  .legal h2{color:var(--ink);margin-top:2rem}
+  .legal h2:first-child{margin-top:0}
+  .legal h3{font-size:1rem;color:var(--ink);margin:1.25rem 0 .4rem}
+  .legal p{margin:0 0 .8rem}
+  @media (prefers-reduced-motion:reduce){.cta{transition:none}}
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<header>
+  <a class="brand" href="https://auktionen.restlos.com/auktionen">RESTLOS<span>.COM</span></a>
+  <nav><a href="https://auktionen.restlos.com/auktionen">Zu den Auktionen</a></nav>
+</header>
+
+<main>
+  <p class="status"><span class="dot" aria-hidden="true"></span>Stand: 21.10.2026, 17:00 Uhr – Auktionsplattform läuft</p>
+
+  <h1>restlos.com ist gerade offline. Unsere Auktionen nicht.</h1>
+  <p class="lede">Unsere Unternehmensseite ist vorübergehend nicht erreichbar. Die Auktionsplattform läuft auf einer eigenen Infrastruktur und ist nicht betroffen: Bieten, Beobachten, Zuschläge und Ihr Konto funktionieren wie gewohnt.</p>
+
+  <a class="cta" href="https://auktionen.restlos.com/auktionen">Zu den laufenden Auktionen</a>
+  <ul class="quick">
+    <li><a href="https://auktionen.restlos.com/profile">Mein Konto</a></li>
+    <li><a href="https://auktionen.restlos.com/my-catalog?title=watch-list">Beobachtungsliste</a></li>
+    <li><a href="https://auktionen.restlos.com/my-catalog?title=bid-list">Gebotsliste</a></li>
+    <li><a href="https://auktionen.restlos.com/my-catalog?title=award-list">Zuschlagsliste</a></li>
+  </ul>
+
+  <section class="grid">
+    <div>
+      <h2>Was ist passiert?</h2>
+      <p>Am 21. Oktober 2026 wurde eine kritische Sicherheitslücke in der Programmiersprache PHP bekannt (CVE-2026-109618 und CVE-2026-109619), die weltweit sehr viele Websites betrifft. Unser Hosting-Anbieter hat daraufhin vorsorglich alle bei ihm gehosteten Websites vom Netz genommen, bis der offizielle Sicherheits-Patch eingespielt ist. Viele andere Anbieter, Universitäten und Unternehmen sind denselben Weg gegangen.</p>
+      <p>Davon betroffen ist ausschließlich unsere Unternehmensseite restlos.com. Es gibt keine Hinweise auf einen Zugriff auf Daten; die Abschaltung ist eine reine Vorsichtsmaßnahme. Sobald der Patch eingespielt und geprüft ist, geht restlos.com wieder online.</p>
+      <p><a href="https://www.mittwald-status.de/incidents/253273">Aktuelle Statusmeldung unseres Hosting-Anbieters</a></p>
+    </div>
+    <div>
+      <h2>Was funktioniert, was nicht?</h2>
+      <ul class="facts">
+        <li><span class="ok" aria-hidden="true">✓</span><span>Auktionen, Gebote, Zuschläge und Ihr Bieterkonto auf auktionen.restlos.com</span></li>
+        <li><span class="ok" aria-hidden="true">✓</span><span>Terminbuchungen für Besichtigung und Abholung</span></li>
+        <li><span class="ok" aria-hidden="true">✓</span><span>E-Mail und Telefon – wir sind erreichbar</span></li>
+        <li><span class="no" aria-hidden="true">–</span><span>Unternehmensseite restlos.com mit FAQ, Referenzen, News, Formularen und Downloads</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Fragen? Wir sind da.</h2>
+    <p>Telefon: <a href="tel:+499112396670">+49 911 239667-0</a> &nbsp;·&nbsp; Mo–Do 8–16 Uhr, Fr 8–13 Uhr</p>
+    <p>E-Mail: <a href="mailto:info@restlos.com">info@restlos.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <span>RESTLOS Industrieverwertungen und Service GmbH, Nürnberg</span>
+  <span><a href="https://auktionen.restlos.com/cookies">Cookies</a> · <a href="/impressum/">Impressum</a> · <a href="/datenschutzerklaerung/">Datenschutz</a></span>
+</footer>
+
+</body>
+</html>

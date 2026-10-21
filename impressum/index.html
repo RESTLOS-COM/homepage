@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impressum | RESTLOS</title>
+<meta name="theme-color" content="#cedc01">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23cedc01'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='20' fill='%23111'%3ER%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --lime:#cedc01;
+    --lime-deep:#b4c000;
+    --ink:#161616;
+    --ink-soft:#4a4a4a;
+    --rule:#dcdcdc;
+    --paper:#ffffff;
+    --paper-tint:#f6f6f2;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,"Segoe UI",sans-serif;
+    font-size:17px;line-height:1.55;
+  }
+  a{color:inherit}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+  .topbar{height:8px;background:var(--lime)}
+  header{
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    max-width:64rem;margin:0 auto;padding:1.25rem 1.5rem;
+    border-bottom:1px solid var(--rule);
+  }
+  .brand{font-weight:800;font-size:1.35rem;letter-spacing:.06em;text-decoration:none}
+  .brand span{color:var(--lime-deep)}
+  header nav a{text-decoration:none;font-weight:600;font-size:.95rem;border-bottom:2px solid var(--lime)}
+  header nav a:hover{border-bottom-color:var(--ink)}
+
+  main{max-width:64rem;margin:0 auto;padding:3rem 1.5rem 4rem}
+  .status{
+    display:inline-flex;align-items:center;gap:.6rem;
+    font-size:.9rem;font-weight:600;color:var(--ink-soft);
+    margin-bottom:1.75rem;
+  }
+  .status .dot{width:.7rem;height:.7rem;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(206,220,1,.3)}
+  h1{
+    font-size:clamp(2rem,5.5vw,3.6rem);line-height:1.05;letter-spacing:-.02em;
+    font-weight:800;margin:0 0 1.25rem;max-width:18ch;
+  }
+  .lede{font-size:clamp(1.1rem,2.2vw,1.35rem);max-width:38rem;margin:0 0 2.25rem;color:var(--ink-soft)}
+
+  .cta{
+    display:inline-block;background:var(--lime);color:var(--ink);text-decoration:none;
+    font-weight:800;font-size:1.15rem;padding:1.05rem 1.6rem;
+    border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);
+    transition:transform .08s ease,box-shadow .08s ease;
+  }
+  .cta:hover{transform:translate(2px,2px);box-shadow:4px 4px 0 var(--ink)}
+  .cta:active{transform:translate(6px,6px);box-shadow:0 0 0 var(--ink)}
+  .quick{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin:1.5rem 0 0;padding:0;list-style:none;font-size:.95rem}
+  .quick a{text-decoration:underline;text-underline-offset:3px}
+
+  .grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;
+    margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid var(--rule);
+  }
+  @media (max-width:720px){.grid{grid-template-columns:1fr;gap:2rem}}
+  h2{font-size:1.15rem;margin:0 0 .75rem;font-weight:800}
+  .grid p{margin:0 0 .9rem;color:var(--ink-soft)}
+  .grid p:last-child{margin-bottom:0}
+  .facts{margin:0;padding:0;list-style:none}
+  .facts li{padding:.55rem 0;border-bottom:1px solid var(--rule);display:flex;gap:.75rem;align-items:flex-start}
+  .facts li:last-child{border-bottom:0}
+  .facts .ok{flex:none;width:1.35rem;height:1.35rem;margin-top:.15rem;background:var(--lime);border:2px solid var(--ink);
+    display:inline-grid;place-items:center;font-size:.8rem;font-weight:800}
+  .facts .no{flex:none;width:1.35rem;height:1.35rem;margin-top:.15rem;background:var(--paper);border:2px solid var(--ink);
+    display:inline-grid;place-items:center;font-size:.8rem;font-weight:800}
+
+  .contact{
+    margin-top:3rem;padding:1.5rem;background:var(--paper-tint);border-left:6px solid var(--lime);
+  }
+  .contact h2{margin-bottom:.5rem}
+  .contact p{margin:.2rem 0}
+  .contact a{text-decoration:none;font-weight:700;border-bottom:2px solid var(--lime)}
+
+  footer{
+    max-width:64rem;margin:0 auto;padding:1.5rem;border-top:1px solid var(--rule);
+    font-size:.85rem;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between;
+  }
+  footer a{text-decoration:underline;text-underline-offset:3px}
+  .legal{margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid var(--rule);max-width:44rem;font-size:.95rem;color:var(--ink-soft)}
+  .legal h2{color:var(--ink);margin-top:2rem}
+  .legal h2:first-child{margin-top:0}
+  .legal h3{font-size:1rem;color:var(--ink);margin:1.25rem 0 .4rem}
+  .legal p{margin:0 0 .8rem}
+  @media (prefers-reduced-motion:reduce){.cta{transition:none}}
+  .doc{max-width:44rem;margin:0 auto;padding:2.5rem 1.5rem 4rem;font-size:.97rem;color:var(--ink-soft)}
+  .doc h1{font-size:clamp(1.7rem,4vw,2.4rem);max-width:none;color:var(--ink)}
+  .doc h2{color:var(--ink);font-size:1.25rem;margin:2.25rem 0 .6rem}
+  .doc h3{color:var(--ink);font-size:1.05rem;margin:1.5rem 0 .4rem}
+  .doc h4{color:var(--ink);font-size:1rem;margin:1.25rem 0 .25rem}
+  .doc p{margin:0 0 .75rem}
+  .doc ul{margin:0 0 .9rem 1.2rem;padding:0}
+  .doc li{margin:.2rem 0}
+  .doc .note{background:var(--paper-tint);border-left:6px solid var(--lime);padding:1rem 1.25rem;margin:0 0 2rem;color:var(--ink)}
+  .doc .meta{font-size:.9rem;margin-bottom:1.5rem}
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<header>
+  <a class="brand" href="/">RESTLOS<span>.COM</span></a>
+  <nav><a href="https://auktionen.restlos.com/auktionen">Zu den Auktionen</a></nav>
+</header>
+<main class="doc">
+
+    <h1>Impressum</h1>
+    <p><strong>Restlos Industrieverwertungen &amp; Service GmbH</strong><br>
+    Puscherstraße 7<br>90411 Nürnberg</p>
+    <p>T +49 (0) 911 239 667 0<br>F +49 (0) 911 239 667 29<br>E <a href="mailto:info@restlos.com">info@restlos.com</a></p>
+    <p>Vertreten durch: Fabian Altrichter (Geschäftsführer)<br>
+    Registergericht: Amtsgericht Nürnberg, HRB 25097<br>
+    Umsatzsteuer-Identifikationsnummer nach § 27a UStG: DE 263750638</p>
+    <p>Genehmigung nach § 34b GewO (Versteigerungsgewerbe) und § 34c GewO (Immobilienmakler). Erlaubnisbehörde: Stadt Nürnberg.</p>
+
+    <h3>Haftungsbeschränkung</h3>
+    <p>Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Der Anbieter übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte. Die Nutzung der Inhalte der Website erfolgt auf eigene Gefahr des Nutzers. Mit der reinen Nutzung der Website des Anbieters kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande.</p>
+    <h3>Externe Links</h3>
+    <p>Diese Website enthält Verknüpfungen zu Websites Dritter („externe Links“). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen; zu dem Zeitpunkt waren keine ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten und macht sich diese nicht zu Eigen. Bei Kenntnis von Rechtsverstößen werden derartige externe Links unverzüglich gelöscht.</p>
+    <h3>Urheber- und Leistungsschutzrechte</h3>
+    <p>Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.</p>
+
+    
+</main>
+<footer>
+  <span>RESTLOS Industrieverwertungen und Service GmbH, Nürnberg</span>
+  <span><a href="/">Startseite</a> · <a href="/impressum/">Impressum</a> · <a href="/datenschutzerklaerung/">Datenschutz</a> · <a href="https://auktionen.restlos.com/cookies">Cookies</a></span>
+</footer>
+</body>
+</html>
