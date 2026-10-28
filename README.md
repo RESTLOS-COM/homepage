@@ -4,13 +4,13 @@ Statische Seite für die Zeit, in der restlos.com beim Hoster offline ist. Keine
 
 ## Inhalt
 - `index.html` – die Seite
-- `404.html` – identische Kopie der Startseite, fängt alle anderen Deep-Links auf (z. B. restlos.com/faq)
+- `404.html` – Kopie der Startseite, fängt alle anderen Deep-Links auf (z. B. restlos.com/faq). Einziger Unterschied: Die Footer-Links sind wurzelrelativ (`/impressum/`), weil die Seite unter beliebigen Pfaden ausgeliefert wird. Funktioniert deshalb nur mit Custom Domain, nicht unter `<org>.github.io/homepage/`.
 - `impressum/index.html`, `datenschutzerklaerung/index.html` – unter den Original-Pfaden, damit die Footer-Links der Auktionsplattform (restlos.com/impressum/, restlos.com/datenschutzerklaerung/) weiter funktionieren
 - `CNAME` – Custom Domain `restlos.com`
 - `.nojekyll` – Jekyll-Verarbeitung aus
 
 ## Deploy (ca. 5 Minuten)
-1. Neues **öffentliches** Repo anlegen (z. B. `restlos-notfallseite`), alle vier Dateien in den Root committen (Branch `main`).
+1. Repo existiert bereits: `RESTLOS-COM/homepage` (öffentlich, Branch `main`). Inhalte aktualisieren, committen, pushen.
 2. Repo → Settings → Pages → Source: *Deploy from a branch*, Branch `main`, Ordner `/ (root)`.
 3. Settings → Pages → Custom domain: `restlos.com` eintragen, speichern. Das Feld muss mit der CNAME-Datei übereinstimmen.
 4. Warten, bis GitHub "DNS check successful" meldet, dann **Enforce HTTPS** aktivieren (Zertifikat kommt automatisch, dauert nach DNS-Umstellung einige Minuten bis ca. 1 Stunde).
@@ -45,8 +45,10 @@ MX, TXT (SPF/DKIM/DMARC), `auktionen`-Einträge **nicht anfassen**.
 - TTL des alten Eintrags bestimmt, wie lange Clients noch die alte IP sehen
 
 ## Rückweg
-A/AAAA am Apex wieder auf die Hoster-Werte setzen, `www`-CNAME zurück, in GitHub die Custom Domain entfernen (sonst meckert GitHub, ist aber harmlos).
+A/AAAA am Apex wieder auf die Hoster-Werte setzen, `www`-CNAME zurück, in GitHub die Custom Domain entfernen.
+
+Empfehlung: `restlos.com` in den Org-Einstellungen unter *Settings → Pages → Verified domains* verifizieren (GitHub nennt den nötigen TXT-Record). Dann kann kein fremdes Repo die Domain als Custom Domain beanspruchen, auch nicht, solange sie hier noch eingetragen ist.
 
 ## Pflege während des Ausfalls
 - Zeitstempel in `index.html` (`Stand: …`) bei jedem Update ändern
-- Impressumstext vor Livegang einfügen (Kommentar am Ende von `index.html`)
+- Jede Änderung an `index.html` auch in `404.html` übernehmen (Footer-Links dort wurzelrelativ lassen)
