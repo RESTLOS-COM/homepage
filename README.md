@@ -1,6 +1,6 @@
-# restlos.com – Notfall-Landingpage (GitHub Pages)
+# restlos.com – Ausfallseite (GitHub Pages)
 
-Statische Seite für die Zeit, in der restlos.com beim Hoster offline ist. Keine Cookies, kein JS, keine externen Requests.
+Generische, statische Ausfallseite für Störungen der Unternehmensseite restlos.com und der Auktionsplattform auktionen.restlos.com. Der Text nennt kein Datum und keinen konkreten Anlass und kann ohne Anpassung live gehen. Keine Cookies, kein JS, keine externen Requests.
 
 ## Inhalt
 - `index.html` – die Seite
@@ -40,6 +40,11 @@ Stattdessen:
 
 MX, TXT (SPF/DKIM/DMARC), `auktionen`-Einträge **nicht anfassen**.
 
+## Ausfall der Auktionsplattform (auktionen.restlos.com) – noch nicht eingerichtet
+Eine GitHub-Pages-Site bedient nur eine Custom Domain (plus `www`). Dieses Repo hängt an `restlos.com`, für `auktionen.restlos.com` braucht es einen eigenen Weg, z. B.:
+- zweites Pages-Repo mit denselben Dateien und `CNAME` = `auktionen.restlos.com`; im Störfall in Route 53 `auktionen` per CNAME auf `<github-org>.github.io.` umstellen (Subdomain, also CNAME erlaubt), oder
+- dieselben Dateien als Fehlerseite in CloudFront/S3 hinterlegen, sodass AWS sie bei 5xx selbst ausliefert.
+
 ## Vor dem Umschalten notieren
 - Aktuelle A-Records und TTL von `restlos.com` (für den Rückweg)
 - TTL des alten Eintrags bestimmt, wie lange Clients noch die alte IP sehen
@@ -49,6 +54,9 @@ A/AAAA am Apex wieder auf die Hoster-Werte setzen, `www`-CNAME zurück, in GitHu
 
 Empfehlung: `restlos.com` in den Org-Einstellungen unter *Settings → Pages → Verified domains* verifizieren (GitHub nennt den nötigen TXT-Record). Dann kann kein fremdes Repo die Domain als Custom Domain beanspruchen, auch nicht, solange sie hier noch eingetragen ist.
 
-## Pflege während des Ausfalls
-- Zeitstempel in `index.html` (`Stand: …`) bei jedem Update ändern
-- Jede Änderung an `index.html` auch in `404.html` übernehmen (Footer-Links dort wurzelrelativ lassen)
+## Pflege
+- Texte nur in `index.html` ändern und `404.html` danach daraus erzeugen (macht die Footer-Links wurzelrelativ):
+  ```
+  sed 's|href="impressum/"|href="/impressum/"|; s|href="datenschutzerklaerung/"|href="/datenschutzerklaerung/"|' index.html > 404.html
+  ```
+- Das RESTLOS-Logo (Quelle: restlos.com/wp-content/uploads/2025/01/restlos_logo.svg) ist als Inline-SVG im Header jeder Seite eingebettet, damit es ohne zusätzliche Requests und unter jedem Pfad funktioniert.
